@@ -1,4 +1,4 @@
-# The playbook for OpenVPN Client installation on Ubuntu 16.04 LTS (Xenial Xerus)
+# The role for OpenVPN Client installation on Ubuntu 16.04 LTS (Xenial Xerus)
 
 ### Install and configure OpenVPN Client on Ubuntu 16.04 LTS according to presets.
 
