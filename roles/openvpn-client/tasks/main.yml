@@ -1,0 +1,10 @@
+---
+# tasks file for openvpn-client
+
+- name: Install, start & enable OpenVPN
+  include_tasks: install.yml
+  tags: install-ovpnclnt
+
+- name: Client configuration
+  include_tasks: configure.yml
+  tags: config-ovpnclnt

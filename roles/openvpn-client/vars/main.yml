@@ -1,0 +1,24 @@
+---
+# vars file for openvpn-client
+
+# Specify that we are a client.
+ ovpnClient_client: client
+
+# Paths to logs.
+ ovpnClient_log: /var/log/openvpn.log
+ ovpnClient_status_log: /var/log/openvpn-status.log
+
+# Use random local port for connection.
+ ovpnClient_nobind: yes
+
+# Downgrade privileges after initialization (non-Windows only).
+ ovpnClient_user: nobody
+ ovpnClient_group: nogroup
+
+# Try to preserve some state across restarts.
+ ovpnClient_persist_key: yes
+ ovpnClient_persist_tun: yes
+
+# Policy level.
+ ovpnClient_script_security: 2
+ ovpnClient_script_security_up_down: /etc/openvpn/update-resolv-conf

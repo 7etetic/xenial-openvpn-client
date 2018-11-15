@@ -1,0 +1,17 @@
+---
+- name: Install OpenVPN
+  apt:
+    name: openvpn
+    state: present
+  become: yes
+  become_method: sudo
+  become_user: root
+
+- name: Enable & Start OpenVPN
+  systemd:
+    name: openvpn
+    enabled: yes
+    state: started
+  become: yes
+  become_method: sudo
+  become_user: root

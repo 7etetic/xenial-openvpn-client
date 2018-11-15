@@ -1,0 +1,4 @@
+# Ansible
+credentials
+*.retry
+!ansible/roles/.gitkeep

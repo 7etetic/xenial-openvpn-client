@@ -1,0 +1,5 @@
+---
+# handlers file for openvpn-client
+
+- name: restart openvpn
+  shell: 'openvpn "{{ ovpnClient_dir }}"/"{{ ovpnClient_file }}" &'

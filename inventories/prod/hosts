@@ -1,0 +1,2 @@
+[openvpn-clients]
+ovpnclnt-01 ansible_host=35.189.210.140

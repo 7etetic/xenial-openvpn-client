@@ -1,0 +1,16 @@
+---
+
+# Generate /etc/openvpn/client.conf from the template & restart service
+
+- name: Generate client configuration
+  template:
+    src: "client.conf.j2"
+    dest: "{{ ovpnClient_dir }}/{{ ovpnClient_file }}"
+    owner: root
+    group: root
+    mode: 0400
+  notify:
+    - restart openvpn
+  become: yes
+  become_method: sudo
+  become_user: root

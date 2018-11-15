@@ -1,0 +1,16 @@
+---
+# Variables for OpenVPN Client hosts
+
+ovpnClient_compression: yes
+ovpnClient_device: tun
+ovpnClient_dir: /etc/openvpn
+ovpnClient_file: client.conf
+ovpnClient_port: 2195
+ovpnClient_protocol: udp
+ovpnClient_server_host: 8.8.8.8
+ovpnClient_use_tls: yes
+# ovpnClient_cipher: AES-256-CBC
+# ovpnClient_auth: SHA256
+# ovpnClient_verbose: 3
+ovpnClient_reneg_sec: 259200
+ovpnClient_auth_nocache: yes

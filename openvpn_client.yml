@@ -1,0 +1,7 @@
+# Install & configure OpenVPN Client on hosts
+- name: Install & configure OpenVPN Client
+  hosts: openvpn-clients
+  become: true
+
+  roles:
+    - openvpn-client
